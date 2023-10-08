@@ -1,0 +1,876 @@
+/* FORMATAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #f7f3ec;
+}
+
+#container {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(4,44,98);
+    background: linear-gradient(90deg, rgba(4,44,98,1) 0%, rgba(9,115,121,1) 34%, rgba(0,194,233,1) 100%);
+}
+
+/* CABEÇALHO */
+#logo h1 {
+    float: left;
+}
+
+#logo a {
+    line-height: 50px;
+    margin-left: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(227, 247, 255);
+    font-weight: bold;
+}
+
+/* MAIN */
+#principal {
+    margin: 100px 0 0 110px;
+    width: 55%;
+    float: left;
+    background-color: #b6d3da;
+    margin-bottom: 15px;
+}
+
+#conteudoprincipal {
+    border: 3px rgb(157, 172, 185);
+    border-style: double;
+    padding: 15px;
+}
+
+#secundario{
+    margin: 100px 0 0 110px;
+    width: 1080px;
+    float: none;
+    clear: both;
+    background-color: #b6d3da;
+    margin-bottom: 15px;
+}
+
+#conteudosecundario {
+    border: 3px rgb(157, 172, 185);
+    border-style: double;
+    padding: 15px;
+}
+
+#lateral {
+    margin: 100px 110px 0 0;
+    width: 25%; 
+    float: right;
+    background-color: #b6d3da;
+}
+
+#formulario {
+    margin: 100px 110px 0 0;
+    margin-top: 10px;
+    width: 25%;
+    float: right;
+    background-color: #b6d3da;
+    margin-bottom: 10px;
+}
+
+#conteudolateral {
+    border: 3px rgb(157, 172, 185);
+    border-style: double;
+    padding: 15px;
+}
+
+/* SELETORES */
+h2, h3, h4, p {
+    color: #1e2c52;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    height: 85px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px;
+    float: right;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: rgb(227, 247, 255);
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    padding-bottom: 3px;
+    margin-right: 25px;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid rgb(55, 96, 110);
+    color: rgb(55, 96, 110);
+}
+
+label {
+    display: block;
+}
+
+input {
+    height: 25px;
+    font-size: 16px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    border: none;
+    padding-left: 10px;
+    width: 15em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input.submit {
+    color: #fff;
+    background-color: #52809e;
+    border: 2px solid #2b525e;
+    padding: 5px 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
+fieldset {
+    padding: 1em;
+    margin: 1em 0;
+    border: 1px solid #7f8a92;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: url(/imagens/fundo-rodape.png) no-repeat center top;
+    clear: both;
+    padding: 5px 0 30px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 20px;
+}
+
+footer ul li {
+    display: inline;
+    margin: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2px;
+    color: #1e2c52;
+}
+
+footer ul li a:hover {
+    color: #81a0a8;
+    border-bottom: 1px solid #81a0a8;
+}
+
+footer>p a {
+    text-align: center;
+    padding: 2px 10px;
+    color: #1e2c52;
+    text-decoration: none;
+}
+
+footer>p a:hover {
+    color: #81a0a8;
+    border-bottom: 1px solid #81a0a8;
+}
+
+h2 + p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+h3, h4 + p {
+    margin-bottom: 14px;
+    margin-top: 15px;
+}
+
+p + img {
+    margin-top: 15px;
+}
+
+/* CLASSES */
+
+.cor {
+    color: #4288c9;
+}
+
+.fundo {
+    background-color: rgb(177, 204, 214);
+    padding: 5px;
+}
+
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* LISTA DE NOTÍCIAS */
+
+#lista-noticias li {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    height: 100px;
+    margin-top: 10px;
+    line-height: 20px;
+    list-style: none;
+}
+
+#lista-noticias li a {
+    text-decoration: none;
+}
+
+#lista-noticias li a h3 {
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticias li:hover {
+    background: #eee;
+}
+
+#lista-noticias li a p {
+    color: #000;
+}
+
+/* EVENTO */
+
+#conteudo {
+    margin-top: 125px;
+    flex: 1.9 1 0;
+    align-self: flex-start;
+    background-color: #b6d3da;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#tabela{
+    background-color: #ecf6f8;
+    font-size: 14px;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+#tabela td{ 
+    border-top: 1px solid rgb(228, 222, 222);
+    padding: 10px;
+}
+
+#primario {
+    border: 3px rgb(157, 172, 185);
+    border-style: double;
+    padding: 15px;
+}
+
+#secundario{
+    background-color: #b6d3da;
+    margin-bottom: 15px;
+}
+
+#conteudosecundario {
+    border: 3px rgb(157, 172, 185);
+    border-style: double;
+    padding: 15px;
+}
+
+#colunas{
+    display: flex;
+    gap: 50px;
+    margin: auto;
+}
+
+#lateral1 {
+    margin-left: 50px;
+    margin-top: 125px;
+    align-self: flex-start;
+    flex: 1.2 1 0;
+    background-color: #b6d3da;
+}
+
+#lateral2 {
+    margin-top: 125px;
+    margin-right: 50px;
+    flex: 1.5 1 0;
+    align-self: flex-start;
+    background-color: #b6d3da;
+}
+
+#vencedores li {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 20px;
+    list-style: none;
+}
+
+/* LOCAL */
+
+#principal2 {
+    margin: 100px;
+    text-align: center;
+    background-color: #b6d3da;
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 3px rgb(157, 172, 185);
+    border-style: double;
+} 
+
+#central{
+    width: auto;
+}
+
+#esquerda{
+    text-align: left;
+}
+
+#esquerda ul li{
+    list-style-type: none;
+}
+
+#esquerda h3{
+    text-transform: uppercase;
+}
+
+#tabelalocal table{
+    margin: 15px auto;
+}
+
+#tabelalocal table img{
+    border: 1px solid #3e658f;
+    border-radius: 10%;
+    margin: 15px;
+}
+
+#frame iframe{
+    border: 1px solid #007bff;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.borda{
+    border-bottom: 1px solid #3e658f;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* COMITÊ */
+
+.wrapper{
+    display: flex;
+    gap: 50px;
+}
+
+.coluna1, .coluna2{
+    flex: 1 1 0;
+}
+
+.coluna1 img, .coluna2 img, .coluna3 img{
+    border-radius: 100%;
+    width: auto;
+    height: 300px;
+}
+
+.coluna3{
+    margin-top: 10px;
+    display: inline-block;
+    border-top: 1px solid rgb(146, 163, 211);
+    width: 100%;
+}
+
+.coluna1 ul li, .coluna2 ul li, .coluna3 ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1e2c52;
+}
+
+img + ul{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ul + img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* FORMULARIO INSCRICAO */
+
+#principal2 h2{
+    text-transform: uppercase;
+}
+
+#inscricao{
+    text-align: left;
+    width: 70%;
+    margin: auto;
+}
+
+#inscricao .labelpersonalizado{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#inscricao label + input{
+    margin-bottom: 12px;
+}
+
+#inscricao legend{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#inscricao input{
+    display: inline;
+    width: 100%;
+}
+
+#inscricao input[type=checkbox]{
+    width: 30px;
+    background-color: violet;
+}
+
+#inscricao input[type="radio"]{
+    width: 30px;
+}
+
+#inscricao select{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* AGRADECIMENTO */
+
+.italico{
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+#estilizar{
+    background-color: #cbd7e4;
+    border: 1px double rgb(115, 148, 185);
+    width: 70%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.retorno{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: #1e2c52;;
+}
+
+a:hover.retorno{
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    color: white;
+    background-color: #4a7eb6;
+    border-radius: 10px;
+}
+
+/* ENTRAR */
+
+#entrar {
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 120px;
+    width: 50%;
+    text-align: center;
+    background-color: #b6d3da;
+    padding: 20px;
+    border: 3px rgb(157, 172, 185);
+    border-style: double;
+} 
+
+/* TODOS OS MEDIA QUERIES ------------------------------------- */
+
+@media screen and (max-width: 1380px) {
+    #principal2{
+        margin-top: 120px;
+    }
+
+    #tabelalocal table img {
+        border: 1px solid #3e658f;
+        border-radius: 10%;
+        margin: 15px;
+        max-width: 85%;
+    }
+
+    #frame iframe {
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        max-width: 100%;
+    }   
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10px 0;
+        height: auto;
+    }
+
+    #logo a {
+        text-align: center;
+    }
+
+    nav ul {
+        float: right;
+        margin: 10px 0;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        float: left;
+        margin-right: 10px;
+    }
+
+    nav ul li a {
+        margin-right: 0;
+    }
+
+    #principal {
+        margin: 20px 10px;
+        margin-top: 10px;
+        width: auto;
+    }
+
+    #lateral {
+        margin: 20px 10px;
+        width: auto;
+    }
+
+    #formulario {
+        margin: 10px;
+        width: auto;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+
+    #vencedores li {
+        text-align: center;
+        padding-bottom: 10px;
+        margin-top: 5px;
+        line-height: normal;
+    }
+
+    #vencedores {
+        padding-left: 0;
+    }
+
+    #conteudo{
+        margin-top: 120px;
+    }
+
+    #primario{
+        margin-top: 0px;
+    }
+
+    #formulario {
+        margin: 10px;
+        width: auto;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header > nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    #conteudo{
+        margin-top: 120px;
+    }
+
+    #principal{
+        float: none;
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #colunas{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #lateral1{
+        width: 95%;
+        margin: auto;
+        flex: 1 1 0;
+        margin-bottom: 10px;
+        margin-top: 120px;
+    }
+
+    #conteudo{
+        margin: auto;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    #lateral2{
+        width: 95%;
+        margin: auto;
+    }
+} 
+
+@media screen and (max-width: 1000px) {
+    .wrapper img{
+        max-width: 100%;
+    }
+
+    .coluna1 img, .coluna2 img, .coluna3 img{
+        border-radius: 100%;
+        width: auto;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header > nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    #conteudo{
+        margin-top: 120px;
+    }
+
+    #principal{
+        float: none;
+    }
+
+    #conteudoprincipal{
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #colunas{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #lateral1{
+        width: 95%;
+        margin: auto;
+        flex: 1 1 0;
+        margin-top: 120px;
+        margin-bottom: 10px;
+    }
+
+    #conteudo{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    #lateral2{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    #principal2 {
+        margin: 20px;
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 120px;
+    }
+
+    #tabelalocal table {
+        margin: 10px auto;
+    }
+
+    #tabelalocal table img {
+        margin: 10px;
+    }
+
+    #tabelalocal table img {
+        border: 1px solid #3e658f;
+        border-radius: 10%;
+        margin: 15px;
+        max-width: 85%;
+    }
+
+    #frame iframe {
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #entrar{
+        margin-top: 300px;
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #conteudo {
+        margin-top: 200px;
+    }
+
+    #vencedores li {
+        font-size: 14px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #colunas{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #lateral1{
+        width: 95%;
+        margin: auto;
+        flex: 1 1 0;
+        margin-top: 300px;
+        margin-bottom: -280px;
+    }
+
+    #conteudo{
+        margin: auto;
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    #tabela{
+        padding: 1px;
+    }
+
+    #lateral2{
+        width: 95%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+} 
+
+@media screen and (max-width: 550px)
+{
+    header > nav > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header > nav > ul > li{
+        font-size: 25px;
+    }
+
+    #conteudo{
+        margin-top: 300px;
+    }
+
+    #principal{
+        float: none;
+    }
+
+    #conteudoprincipal{
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #principal2{
+        margin-top: 300px;
+    }
+
+    #tabelalocal table img {
+        border: 1px solid #3e658f;
+        border-radius: 10%;
+        margin: 15px;
+        max-width: 85%;
+    }
+
+    #frame iframe {
+        border-radius: 10px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        max-width: 100%;
+    }   
+}
